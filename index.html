@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login & Registration Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	
+	<div class="hero">
+		<div class="form-box">                       
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
+				<button type="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+			</div>
+		
+			<div class="soical-icons">                                    
+				<a href="#"><i class="fa fa-facebook-square  fa-6"></i></a>
+			</div>
+                        <div class="soical-icons1">                                    
+				<a href="#"><i class="fa fa-google-plus-square fa-6"></i></a>
+			</div>
+                        <div class="soical-icons2">                                    
+			        <a href="#"><i class="fa fa-twitter-square fa-6"></i></a>
+			</div>
+
+
+
+
+
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required />
+				<input type="text" class="input-field" placeholder="Enter Password" required />
+				<input type="checkbox" class="check-box" /><span>Remember Password</span>
+				<button type="submit" class="submit-btn" id="demo" onclick="myfunc()"><b>Log In</b></button>
+			</form>
+
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required />
+				<input type="email" class="input-field" placeholder="Enter Email" required />
+				<input type="text" class="input-field" placeholder="Enter Password" required />
+				<input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
+				<button type="submit" class="submit-btn" id="demo1" onclick="myfuncc()"><b>Register</b></button>
+			</form>
+
+		</div>
+	</div>
+
+
+	
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+		function myfunc(){
+		alert("You Are Logged In");
+}
+               function myfuncc(){
+		alert("You Are Registered ");
+}
+
+	</script>
+</body>
+</html>
